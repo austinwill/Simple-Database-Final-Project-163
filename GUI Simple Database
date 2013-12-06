@@ -1,0 +1,45 @@
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+
+/**********************************************************************
+ * The following class creates a simple GUI for the 
+ * Simple Database 
+ * 
+ * @author Louis Marzorati
+ * @author Daniel Kelch
+
+ * @version 12/02/13
+ **********************************************************************/
+
+public class GUISimpleDatabase extends JFrame implements ActionListener {
+	
+	public GUISimpleDatabase() {
+		
+	}
+	
+	/*******************************************************************
+	 * This main method instantiates the GUI
+	 * @param args
+	 *****************************************************************/
+	public static void main (String[] args){
+		
+		JFrame frame = new JFrame ("Simple Database");
+		frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
+
+		frame = new SimpleDatabasePanel();
+
+		frame.pack();
+
+		frame.setVisible(true);
+	}
+
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+	}
+}
